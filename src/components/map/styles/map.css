@@ -1,0 +1,41 @@
+/* .gm are maps api internal classes */
+.gm-style-iw {
+  background: #27333d !important;
+}
+
+.gm-style-iw-d {
+  overflow: hidden !important;
+}
+
+.gm-style-iw-t::after {
+  background: #27333d !important;
+  box-shadow: -1px 3px 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+.gm-ui-hover-effect {
+  display: none !important;
+}
+
+/* zoom controls */
+.gm-control-active {
+  z-index: 99 !important;
+}
+
+.info-window {
+  width: 200px;
+  height: 20px;
+  background: #27333d !important;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.info-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.004em;
+  color: #5393c8;
+  margin-bottom: 20px;
+}

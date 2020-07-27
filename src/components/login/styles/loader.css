@@ -1,0 +1,9 @@
+.loaderImg {
+  height: 400px;
+}
+
+.loaderImg img {
+  height: auto;
+  width: 56%;
+  margin: 0 22%;
+}
