@@ -1,7 +1,7 @@
 /**
  * returns filter prameters
  * @param  {Array}  markers array of marker objects
- * @return {Object}         filter paramertes
+ * @returns {Object}         filter paramertes
  */
 
 export function getDemographics(markers) {

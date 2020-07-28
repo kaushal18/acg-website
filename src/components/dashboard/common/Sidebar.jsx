@@ -6,12 +6,11 @@ const Sidebar = (props) => {
 
   return (
     <div className={`leftMenu ${expanded ? "expandWidth" : ""}`} id="leftMenu">
-      <ul className="topSideMenu comnmenu">
-        <li
-          className={`${activePage === "home" ? "active" : ""}`}
-          id="home"
-          onClick={(e) => setActivePage(e.target.id)}
-        >
+      <ul
+        className="topSideMenu comnmenu"
+        onClick={(e) => setActivePage(e.target.id)}
+      >
+        <li className={`${activePage === "home" ? "active" : ""}`} id="home">
           {/* eslint-disable-next-line */}
           <a href="#" title="Home">
             <span className="menu-icon">
@@ -45,7 +44,6 @@ const Sidebar = (props) => {
         <li
           className={`${activePage === "monitoring" ? "active" : ""}`}
           id="monitoring"
-          onClick={(e) => setActivePage(e.target.id)}
         >
           {/* eslint-disable-next-line */}
           <a href="#" title="Health Monitoring">
@@ -88,7 +86,6 @@ const Sidebar = (props) => {
         <li
           className={`${activePage === "analytics" ? "active" : ""}`}
           id="analytics"
-          onClick={(e) => setActivePage(e.target.id)}
         >
           {/* eslint-disable-next-line */}
           <a href="#" title="Analytics">
@@ -133,7 +130,6 @@ const Sidebar = (props) => {
         <li
           className={`${activePage === "maintenace" ? "active" : ""}`}
           id="maintenace"
-          onClick={(e) => setActivePage(e.target.id)}
         >
           {/* eslint-disable-next-line */}
           <a href="#" title="Smart Maintenace">
@@ -184,7 +180,6 @@ const Sidebar = (props) => {
         <li
           className={`${activePage === "alerts" ? "active" : ""}`}
           id="alerts"
-          onClick={(e) => setActivePage(e.target.id)}
         >
           {/* eslint-disable-next-line */}
           <a href="#" title="Alerts &amp; Notifications">
@@ -211,7 +206,6 @@ const Sidebar = (props) => {
         <li
           className={`${activePage === "reports" ? "active" : ""}`}
           id="reports"
-          onClick={(e) => setActivePage(e.target.id)}
         >
           {/* eslint-disable-next-line */}
           <a href="#" title="Reports">
@@ -261,8 +255,14 @@ const Sidebar = (props) => {
         </li>
       </ul>
 
-      <ul className="bottomSideMenu comnmenu">
-        <li>
+      <ul
+        className="bottomSideMenu comnmenu"
+        onClick={(e) => setActivePage(e.target.id)}
+      >
+        <li
+          className={`${activePage === "settings" ? "active" : ""}`}
+          id="settings"
+        >
           {/* eslint-disable-next-line */}
           <a href="#" title="Settings">
             <span className="menu-icon">
@@ -302,7 +302,7 @@ const Sidebar = (props) => {
             Settings
           </a>
         </li>
-        <li>
+        <li className={`${activePage === "help" ? "active" : ""}`} id="help">
           {/* eslint-disable-next-line */}
           <a href="#" title="Help">
             <span className="menu-icon">

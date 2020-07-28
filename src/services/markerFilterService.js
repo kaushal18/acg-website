@@ -1,7 +1,7 @@
 /**
  * returns count of each machine state (marker)
  * @param  {Array}  markers
- * @return {Object} markerCount
+ * @returns {Object} markerCount
  */
 
 function getCount(markers) {
@@ -23,7 +23,7 @@ function getCount(markers) {
  * returns filtered marker array and count
  * @param  {String} displayedMachines
  * @param  {Array}  markers
- * @return {Object} object consisting of filtered markers, counts
+ * @returns {Object} object consisting of filtered markers, counts
  */
 export function getFilteredMarkers(displayedMachines, markers) {
   let filteredMarkers = [...markers];
