@@ -13,7 +13,7 @@ const Sidebar = (props) => {
         <li className={`${activePage === "home" ? "active" : ""}`} id="home">
           {/* eslint-disable-next-line */}
           <a href="#" title="Home">
-            <span className="menu-icon">
+            <span className="menu-icon" id="home">
               <svg
                 width="21"
                 height="21"
@@ -47,7 +47,7 @@ const Sidebar = (props) => {
         >
           {/* eslint-disable-next-line */}
           <a href="#" title="Health Monitoring">
-            <span className="menu-icon">
+            <span className="menu-icon" id="monitoring">
               <svg
                 width="18"
                 height="17"
@@ -89,7 +89,7 @@ const Sidebar = (props) => {
         >
           {/* eslint-disable-next-line */}
           <a href="#" title="Analytics">
-            <span className="menu-icon">
+            <span className="menu-icon" id="analytics">
               <svg
                 width="21"
                 height="21"
@@ -133,7 +133,7 @@ const Sidebar = (props) => {
         >
           {/* eslint-disable-next-line */}
           <a href="#" title="Smart Maintenace">
-            <span className="menu-icon">
+            <span className="menu-icon" id="maintenace">
               <svg
                 width="26"
                 height="26"
@@ -183,7 +183,7 @@ const Sidebar = (props) => {
         >
           {/* eslint-disable-next-line */}
           <a href="#" title="Alerts &amp; Notifications">
-            <span className="menu-icon">
+            <span className="menu-icon" id="alerts">
               <svg
                 width="16"
                 height="18"
@@ -209,7 +209,7 @@ const Sidebar = (props) => {
         >
           {/* eslint-disable-next-line */}
           <a href="#" title="Reports">
-            <span className="menu-icon">
+            <span className="menu-icon" id="reports">
               <svg
                 width="21"
                 height="20"
@@ -265,7 +265,7 @@ const Sidebar = (props) => {
         >
           {/* eslint-disable-next-line */}
           <a href="#" title="Settings">
-            <span className="menu-icon">
+            <span className="menu-icon" id="settings">
               <svg
                 width="21"
                 height="21"
@@ -305,7 +305,7 @@ const Sidebar = (props) => {
         <li className={`${activePage === "help" ? "active" : ""}`} id="help">
           {/* eslint-disable-next-line */}
           <a href="#" title="Help">
-            <span className="menu-icon">
+            <span className="menu-icon" id="help">
               <svg
                 width="21"
                 height="21"

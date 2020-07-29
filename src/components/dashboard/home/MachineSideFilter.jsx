@@ -1,4 +1,6 @@
 import React from "react";
+import fillIcon from "../images/filterFill.png";
+import notFillIcon from "../images/filterNotFill.png";
 
 const MachineSideFilter = (props) => {
   const { filterVisible, setFilterVisible } = props;
@@ -7,7 +9,12 @@ const MachineSideFilter = (props) => {
     <React.Fragment>
       <div className="filterInnerDiv">
         <span
-          className={`filterIcon pointer ${filterVisible ? "" : "fillIcon"}`}
+          className="filterIcon pointer"
+          style={{
+            background: `#27333d url(${
+              filterVisible ? fillIcon : notFillIcon
+            }) no-repeat center`,
+          }}
           onClick={() => setFilterVisible((prevState) => !prevState)}
         ></span>
       </div>

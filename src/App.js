@@ -6,13 +6,11 @@ import Login from "./components/login/Login";
 import "./App.css";
 
 function App() {
-  // fetch from local storage for persistence
   const defaultTheme = "dark";
   const [currentTheme, setCurrentTheme] = useState(defaultTheme);
 
   useEffect(() => {
     document.body.className = currentTheme;
-    // store in local storage for persistence
   }, [currentTheme]);
 
   return (

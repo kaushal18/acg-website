@@ -30,9 +30,8 @@ const MachineList = React.memo((props) => {
   }, [data]);
 
   const scrollTobottom = () => {
-    // console.log(document.querySelector("#allMachineList").scrollHeight);
     const element = document.querySelector("#allMachineList");
-    element.scrollTop = element.scrollHeight;
+    element.scrollTop = element.scrollHeight - element.clientHeight;
   };
 
   return (

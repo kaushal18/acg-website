@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import fillIcon from "../images/filterFill.png";
+import notFillIcon from "../images/filterNotFill.png";
 
 const MapSideFilter = (props) => {
   const {
@@ -50,7 +52,12 @@ const MapSideFilter = (props) => {
     <React.Fragment>
       <div className="filterInnerDiv">
         <span
-          className={`filterIcon pointer ${filterVisible ? "" : "fillIcon"}`}
+          className="filterIcon pointer"
+          style={{
+            background: `#27333d url(${
+              filterVisible ? fillIcon : notFillIcon
+            }) no-repeat center`,
+          }}
           onClick={() => setFilterVisible((prevState) => !prevState)}
         ></span>
       </div>

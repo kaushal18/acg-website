@@ -602,7 +602,7 @@ header {
 }
 .filterInnerDiv span:before {
   content: "";
-  background: url(../images/filterFill.png) no-repeat left center;
+  /* background: url(../images/filterFill.png) no-repeat left center; */
   position: absolute;
   z-index: 9;
   height: 20px;
@@ -632,11 +632,11 @@ header {
   box-shadow: none;
 }
 
-.filterInnerDiv span .fillIcon:before {
-  background: url(../images/filterNotFill.png) no-repeat left center;
-}
+/* .filterInnerDiv span .fillIcon:before {
+  background: url(../images/filterNotFill.png) no-repeat left center !important;
+} */
 .filterInnerDiv span {
-  background: #27333d;
+  /* background-color: #27333d; */
   border-radius: 4px 4px 4px 0px;
   padding: 5px 10px;
   margin-top: 0px;
@@ -995,7 +995,7 @@ header {
   height: calc(100% - 30px);
   width: calc(100% - 15px);
 }
-.clshight80 {
+.appSetting .clshight80 {
   height: 80px;
   border-bottom: 2px solid #121212;
 }
