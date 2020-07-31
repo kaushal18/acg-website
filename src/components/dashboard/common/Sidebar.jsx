@@ -12,7 +12,7 @@ const Sidebar = (props) => {
       >
         <li className={`${activePage === "home" ? "active" : ""}`} id="home">
           {/* eslint-disable-next-line */}
-          <a href="#" title="Home">
+          <a href="#" title="Home" id="home">
             <span className="menu-icon" id="home">
               <svg
                 width="21"
@@ -20,6 +20,7 @@ const Sidebar = (props) => {
                 viewBox="0 0 21 21"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                id="home"
               >
                 <path
                   className="fillColor"
@@ -46,7 +47,7 @@ const Sidebar = (props) => {
           id="monitoring"
         >
           {/* eslint-disable-next-line */}
-          <a href="#" title="Health Monitoring">
+          <a href="#" title="Health Monitoring" id="monitoring">
             <span className="menu-icon" id="monitoring">
               <svg
                 width="18"
@@ -54,6 +55,7 @@ const Sidebar = (props) => {
                 viewBox="0 0 18 17"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                id="monitoring"
               >
                 <path
                   d="M3.29199 12.2755H2.45866C2.01663 12.2755 1.59271 12.0999 1.28015 11.7873C0.967587 11.4748 0.791992 11.0509 0.791992 10.6088V2.27549C0.791992 1.83346 0.967587 1.40954 1.28015 1.09698C1.59271 0.78442 2.01663 0.608826 2.45866 0.608826H15.792C16.234 0.608826 16.6579 0.78442 16.9705 1.09698C17.2831 1.40954 17.4587 1.83346 17.4587 2.27549V10.6088C17.4587 11.0509 17.2831 11.4748 16.9705 11.7873C16.6579 12.0999 16.234 12.2755 15.792 12.2755H14.9587"
@@ -88,7 +90,7 @@ const Sidebar = (props) => {
           id="analytics"
         >
           {/* eslint-disable-next-line */}
-          <a href="#" title="Analytics">
+          <a href="#" title="Analytics" id="analytics">
             <span className="menu-icon" id="analytics">
               <svg
                 width="21"
@@ -96,6 +98,7 @@ const Sidebar = (props) => {
                 viewBox="0 0 21 21"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                id="analytics"
               >
                 <path
                   d="M16.6063 1.88425H3.64336C2.62061 1.88425 1.7915 2.71335 1.7915 3.7361V16.6991C1.7915 17.7218 2.62061 18.5509 3.64336 18.5509H16.6063C17.6291 18.5509 18.4582 17.7218 18.4582 16.6991V3.7361C18.4582 2.71335 17.6291 1.88425 16.6063 1.88425Z"
@@ -132,7 +135,7 @@ const Sidebar = (props) => {
           id="maintenace"
         >
           {/* eslint-disable-next-line */}
-          <a href="#" title="Smart Maintenace">
+          <a href="#" title="Smart Maintenace" id="maintenace">
             <span className="menu-icon" id="maintenace">
               <svg
                 width="26"
@@ -140,6 +143,7 @@ const Sidebar = (props) => {
                 viewBox="0 0 26 26"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                id="maintenace"
               >
                 <path
                   fillRule="evenodd"
@@ -182,7 +186,7 @@ const Sidebar = (props) => {
           id="alerts"
         >
           {/* eslint-disable-next-line */}
-          <a href="#" title="Alerts &amp; Notifications">
+          <a href="#" title="Alerts &amp; Notifications" id="alerts">
             <span className="menu-icon" id="alerts">
               <svg
                 width="16"
@@ -190,6 +194,7 @@ const Sidebar = (props) => {
                 viewBox="0 0 16 18"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                id="alerts"
               >
                 <path
                   fillRule="evenodd"
@@ -208,7 +213,7 @@ const Sidebar = (props) => {
           id="reports"
         >
           {/* eslint-disable-next-line */}
-          <a href="#" title="Reports">
+          <a href="#" title="Reports" id="reports">
             <span className="menu-icon" id="reports">
               <svg
                 width="21"
@@ -216,6 +221,7 @@ const Sidebar = (props) => {
                 viewBox="0 0 21 20"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                id="reports"
               >
                 <path
                   className="fillColor"
@@ -264,7 +270,7 @@ const Sidebar = (props) => {
           id="settings"
         >
           {/* eslint-disable-next-line */}
-          <a href="#" title="Settings">
+          <a href="#" title="Settings" id="settings">
             <span className="menu-icon" id="settings">
               <svg
                 width="21"
@@ -272,6 +278,7 @@ const Sidebar = (props) => {
                 viewBox="0 0 21 21"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                id="settings"
               >
                 <g clipPath="url(#clip0)">
                   <path
@@ -304,7 +311,7 @@ const Sidebar = (props) => {
         </li>
         <li className={`${activePage === "help" ? "active" : ""}`} id="help">
           {/* eslint-disable-next-line */}
-          <a href="#" title="Help">
+          <a href="#" title="Help" id="help">
             <span className="menu-icon" id="help">
               <svg
                 width="21"
@@ -312,6 +319,7 @@ const Sidebar = (props) => {
                 viewBox="0 0 21 21"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                id="help"
               >
                 <path
                   d="M10.1248 18.5989C14.7272 18.5989 18.4582 14.868 18.4582 10.2656C18.4582 5.66324 14.7272 1.93228 10.1248 1.93228C5.52246 1.93228 1.7915 5.66324 1.7915 10.2656C1.7915 14.868 5.52246 18.5989 10.1248 18.5989Z"

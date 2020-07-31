@@ -3,6 +3,7 @@ import Navbar from "./common/Navbar";
 import Sidebar from "./common/Sidebar";
 import Home from "./home/Home";
 import AppSettings from "./appSettings/AppSettings";
+import Monitoring from "./monitoring/Monitoring";
 import "./styles/dashboard.css";
 
 const Dashboard = () => {
@@ -13,7 +14,7 @@ const Dashboard = () => {
       <Sidebar activePage={activePage} setActivePage={setActivePage} />
 
       {activePage === "home" && <Home />}
-      {activePage === "monitoring" && <h2>health monitoring</h2>}
+      {activePage === "monitoring" && <Monitoring />}
 
       {activePage === "settings" && <AppSettings />}
 

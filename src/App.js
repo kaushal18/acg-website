@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { ThemeContext } from "./ThemeContext";
 import Dashboard from "./components/dashboard/Dashboard";
 import Login from "./components/login/Login";
+import Test from "./components/d3/Test";
 import "./App.css";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <ThemeContext.Provider value={{ currentTheme, setCurrentTheme }}>
           <Route path="/" exact component={Login} />
           <Route path="/dashboard" component={Dashboard} />
+          <Route path="/test" component={Test} />
         </ThemeContext.Provider>
       </Switch>
     </BrowserRouter>

@@ -29,11 +29,6 @@ const MachineList = React.memo((props) => {
     return rows;
   }, [data]);
 
-  const scrollTobottom = () => {
-    const element = document.querySelector("#allMachineList");
-    element.scrollTop = element.scrollHeight - element.clientHeight;
-  };
-
   return (
     <div className="contentPart">
       <MachineSideFilter {...props} />
@@ -54,13 +49,6 @@ const MachineList = React.memo((props) => {
               <div ref={setElement} className="row mb14"></div>
             )}
           </SimpleBar>
-
-          <div
-            style={{ position: "absolute", bottom: "5%", left: "50%" }}
-            onClick={scrollTobottom}
-          >
-            <button>bottom</button>
-          </div>
         </div>
       </div>
     </div>
