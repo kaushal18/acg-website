@@ -6,7 +6,7 @@
   font-size: 16px;
 }
 
-.form-signin input[type="email"] {
+.dark .form-signin input[type="email"] {
   background: #1f1f1f;
   border: 0.4px solid #434343;
   box-sizing: border-box;
@@ -15,10 +15,22 @@
   width: 100%;
   height: 32px;
   font-size: 12px;
-  color: #fff;
+  color: #696c72;
 }
 
-.form-signin input[type="password"] {
+.light .form-signin input[type="email"] {
+  background: #ffffff;
+  border: 0.4px solid #d3d3d3;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 100%;
+  height: 32px;
+  font-size: 12px;
+  color: #696c72;
+}
+
+.dark .form-signin input[type="password"] {
   background: #1f1f1f;
   border: 0.4px solid #434343;
   box-sizing: border-box;
@@ -27,7 +39,19 @@
   width: 260px;
   height: 32px;
   font-size: 12px;
-  color: #fff;
+  color: #696c72;
+}
+
+.light .form-signin input[type="password"] {
+  background: #ffffff;
+  border: 0.4px solid #d3d3d3;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 260px;
+  height: 32px;
+  font-size: 12px;
+  color: #696c72;
 }
 
 .form-signin .form-control:focus {
@@ -35,7 +59,7 @@
   border: 0.4px solid rgba(32, 141, 244, 0.8);
 }
 
-.loginFormBg {
+.dark .loginFormBg {
   width: 100%;
   max-width: 380px;
   padding: 35px 20px;
@@ -45,15 +69,36 @@
   border-radius: 4px;
 }
 
-.welcm {
+.light .loginFormBg {
+  width: 100%;
+  max-width: 380px;
+  padding: 35px 20px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+.dark .welcm {
   font-size: 20px;
   color: rgba(255, 255, 255, 0.87);
 }
 
-.hr {
+.light .welcm {
+  font-size: 20px;
+  color: #414141;
+}
+
+.dark .hr {
   height: 1px;
   width: 340px;
   background-color: #454545;
+}
+
+.light .hr {
+  height: 1px;
+  width: 340px;
+  background-color: #a7a7a7;
 }
 
 .mTB20 {
@@ -64,16 +109,21 @@
   padding: 10px 40px;
 }
 
-.labelStyle {
+.dark .labelStyle {
   font-size: 12px;
   color: #e0e0e0;
+}
+
+.light .labelStyle {
+  font-size: 12px;
+  color: #414141;
 }
 
 .loginBtn {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   margin: 30px 0 10px 0;
-  background-color: #208df4;
+  background-color: #27a2f8;
 }
 
 .logintxt {

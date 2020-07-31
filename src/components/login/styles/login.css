@@ -33,9 +33,18 @@
   font-style: normal;
 } */
 
-.bgImgLogin {
+.dark .bgImgLogin {
   background-color: #000;
   background-image: url(../images/dark_mode_background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.light .bgImgLogin {
+  background-color: #fff;
+  background-image: url(../images/light_mode_background.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -51,9 +60,17 @@
   text-align: left;
 }
 
-.copyright {
+.dark .copyright {
   font-size: 8px;
   color: #e0e0e0;
+  position: absolute;
+  right: 12px;
+  bottom: 6px;
+}
+
+.light .copyright {
+  font-size: 8px;
+  color: #3b414b;
   position: absolute;
   right: 12px;
   bottom: 6px;
