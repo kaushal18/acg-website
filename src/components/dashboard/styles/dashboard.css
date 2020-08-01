@@ -271,6 +271,12 @@ header {
   font-size: 10px;
   color: #e0e0e0;
 }
+
+.breadcrumsCls .breadcrumb-item a {
+  color: #e0e0e0;
+  font-size: 10px;
+}
+
 /* Breadcrum CSS in BarkMode End */
 /* Left CSS in BarkMode Start */
 .leftMenu {
@@ -1298,3 +1304,133 @@ header {
   color: #e0e0e0;
 }
 /* Application Setting Code End Here */
+/* All popup css start */
+.modelboxopen {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.6);
+}
+.modelboxopenInnner {
+  width: 900px;
+  height: 600px;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /*    margin-left: -150px;
+      margin-top: -150px;*/
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  background: #1f1f1f;
+  border-radius: 4px;
+}
+.descriptions {
+  height: 500px;
+  overflow: auto;
+}
+.modelclose {
+  border: 0px solid #999;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 25px;
+  line-height: 25px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  background: #ff0000;
+  z-index: 9;
+}
+.titleDiv {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #e0e0e0;
+  width: calc(100% - 10px);
+}
+.popupCloseButton {
+  height: 60px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0 24px;
+}
+.bbt {
+  border-bottom: 1px solid #313131;
+}
+.closepopup {
+  float: right;
+  color: #8f8f8f;
+}
+.closepopup:hover {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+.contentPopup {
+  height: calc(100% - 60px);
+}
+.download-bellIcon {
+  padding: 10px 40px;
+  text-align: right;
+}
+.downBtn {
+  margin-right: 15px;
+}
+.ulMachinePopup {
+  margin: 0px;
+  padding: 0 30px;
+  list-style: none;
+}
+.ulMachinePopup li {
+  /* float: left; */
+  width: 18%;
+  background: #2a2a2a;
+  border-radius: 3px;
+  color: rgba(255, 255, 255, 0.87);
+  height: 82px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  text-align: center;
+  margin: 0 1% 10px 1%;
+}
+.machineSet1 {
+  font-size: 14px;
+}
+.machineSet2 {
+  font-size: 10px;
+}
+.machineSet3 {
+  font-size: 9px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.machineSet3 {
+  display: inline-block;
+}
+.machineTimes,
+.timeTxt {
+  line-height: 10px;
+  display: inline-flex;
+}
+
+.machineTimes {
+  vertical-align: middle;
+}
+.machineSet4 {
+  font-size: 8px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.unitTxt {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+/* All popup css end */
